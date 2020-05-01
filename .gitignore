@@ -3,5 +3,6 @@
 /docker/php/psysh
 !/docker/php/psysh/config.php
 /logs/*
+!/logs/dummy
 /.env
 /.vscode
