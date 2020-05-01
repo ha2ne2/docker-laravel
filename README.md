@@ -81,10 +81,16 @@ https://www.docker.com/products/docker-desktop
 
 # よく使うコマンドなど
 
-- dockerコンテナを立ち上げる (OS再起動後など)
+- dockerコンテナの起動 (OS再起動後など)
   ```
   $ cd ~/work/docker-laravel
   $ docker-compose up -d --build
+  ```
+
+- 起動中のコンテナの停止
+  ```
+  $ cd ~/work/docker-laravel
+  $ docker-compose down
   ```
 
 - dockerコンテナの稼働状況を確認する
@@ -96,7 +102,7 @@ https://www.docker.com/products/docker-desktop
   ```
   $ docker-compose exec app ash
   ```
-- 各種ログファイルは docker-larave/log ディレクトリに出力されます。  
+- 各種ログファイルは docker-laravel/logs ディレクトリに出力されます。  
 
 
 # その他
