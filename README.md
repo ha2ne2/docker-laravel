@@ -10,6 +10,9 @@ Docker は簡単にいえば環境構築を簡単に行えるようにするた�
 Docker入門（第一回）～Dockerとは何か、何が良いのか～  
 https://knowledge.sakura.ad.jp/13265/
 
+【初心者向け】20分でLaravel開発環境を爆速構築するDockerハンズオン  
+https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4
+
 # 事前準備
 dockerとdocker-composeをインストールして下さい。  
 Mac / Windowsの場合はDocker Desktopというソフトを使えば簡単にインストールできます。
@@ -77,12 +80,18 @@ https://www.docker.com/products/docker-desktop
 
 # よく使うコマンドなど
 
-- dockerコンテナの立ち上げ (OS再起動後など)
+- dockerコンテナを立ち上げる (OS再起動後など)
   ```
   $ cd ~/work/docker-laravel
   $ docker-compose up -d --build
   ```
-- appコンテナへの入り方  
+
+- dockerコンテナの稼働状況を確認する
+  ```
+  $ docker-compose ps
+  ```
+
+- appコンテナへ入る  
   ```
   $ docker-compose exec app ash
   ```
