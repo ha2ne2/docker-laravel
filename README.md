@@ -61,11 +61,12 @@ https://www.docker.com/products/docker-desktop
    $ git clone https://github.com/ha2ne2/docker-laravel
    ```
 
-3. dockerコンテナの立ち上げ（初回は各種ソフトのインストールが走ります）
+3. dockerコンテナの立ち上げ
    ```
    $ cd docker-laravel
    $ docker-compose up -d --build
    ```
+   初回起動時は各種ソフトのインストールが走ります。私のノートパソコンで5分ほど掛かりました。気長に待ちましょう。
 
 4. 動作確認  
    環境構築は以上で完了です。  
